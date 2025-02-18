@@ -112,7 +112,23 @@ footer p {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
 
+  /* Optionally reduce logo and nav text sizes for small screens */
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+}
 /* Contact Page Styles */
 /* Contact Page Styles */
 .contact {
@@ -211,8 +227,4 @@ footer p {
   border: 2px solid #ff3a302c;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.margin-left-20 {
-  margin-left: 20px;
 }
