@@ -228,3 +228,87 @@ footer p {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+.about a {
+  color: #ff3b30;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.about a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* Global Link Styling (outside nav) */
+main a,
+.contact a,
+.portfolio a {
+  color: #ff3b30;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+main a:hover,
+.contact a:hover,
+.portfolio a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff3b30;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #ff3b30;
+  transition: width 0.3s ease;
+}
+
+.logo:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.logo:hover::after {
+  width: 100%;
+}
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #ff3b30;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ff3b30;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
